@@ -74,5 +74,26 @@ arr.splice(-1, 0, 3, 4)
 console.log(arr) // output [1, 2, 3, 4, 5]
 ```
 
+## Slice
+
+The syntax is:
+
+```
+arr.slice([start], [end])
+```
+
+It returns a new array copying to it all items from index `start` to `end` **(not including end)**. Both `start` and `end` can be negative, in that case position from array end is assumed.
+
+For instance:
+
+```
+let arr = ["t", "e", "s", "t"];
+
+alert(arr.slice(1, 3)); // e,s (copy from 1 to 2, because not includes the end)
+
+alert(arr.slice(2)): // s,t (copy from 2 till the end)
+
+alert(arr.slice(-2)); // s,t (copy from -2 till the end)
+```
 
 
